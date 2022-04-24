@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: rgb(177, 175, 175);
+    font-family: 'Comic Sans MS', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+#titulo{
+    position: relative;
+    padding: 0px;
+    text-align: center;
+    font-family: 'Hurricane', cursive;
+    font-size: 60px;
+}
+nav{
+    position: relative;    
+}
+.menu{
+    background-image: url("../assets/img/sky_bg.jfif");
+    position: sticky;
+    top: 0px;
+}
+.menu img{
+    padding: 20px 0px 0px 20px;
+    width: 120px;
+}
+ul{
+    list-style: none;
+    font-size: 0;
+}
+li{
+    display: inline-block;
+    width: 10%;
+    position: relative;
+    font-size: 20px;
+    padding: 0px 100px 0px 50px;
+    text-align: center;
+}
+a{
+    display: inline;
+    text-decoration: none;
+    color: black;
+}
+section{
+    background-color: antiquewhite;
+    border: 3px black solid;
+    border-radius: 15px;
+    text-align: center;
+}
+section p{
+    text-align: left;
+}
+section img{
+    padding: 3px 1px 1px 1px;
+    display: inline;
+    width: 370px;
+}
+.town{
+    text-align: center;
+    font-size: 1.5rem;
+    border: 2px grey outset;
+    border-radius: 15px;
+    background-color: beige;
+    font-style: italic;
+}
+footer{
+    background-color: white;
+    text-align: center;
+}
+footer img{
+    width: 60px;
+    display: inline;
+}

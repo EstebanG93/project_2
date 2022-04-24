@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villes Touristiques en Colombie</title>
+    <link rel="shortcut icon" href="assets/img/shortcut_icon.png">
+    <!-- Style Bootstrap local -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Style CSS personal -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<body>
+    <div class="container.fluit">
+        <div class="row">
+            <div class="col-sm-3 col-lg-1">
+                <img src="assets/img/icon.png" class="img-fluid" alt="voyager_Icon">
+            </div>
+            <div class="col-sm-9 col-lg-11">
+                <header>
+                    <h1 class="text-center">Villes Touristiques en Colombie</h1>
+                </header>
+            </div>
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Menu de recherche</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="pages/villes.html">Villes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="pages/a_propos.html">À propos de nous</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="pages/contactez.html">Contactez-nous</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="pages/inscrire.html">Inscrire-vous</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/barichara.jpg" class="d-block w-100" alt="barichara">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Barichara</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/villa_de_leyva.jpg" class="d-block w-100" alt="leyva">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Villa de Leyva</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/pasto.jpg" class="d-block w-100" alt="pasto">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Pasto</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/palomino.jpg" class="d-block w-100" alt="palomino">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Palomino</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div>
+        <section>
+            <form>
+                <label for="prenom">Prénom:</label>
+                <input id="prenom" placeholder="Ex: Pierre">
+                <br>
+                <label for="nom">Nom:</label>
+                <input id="nom" placeholder="Ex: Migneault">
+                <br>
+                <label for="ville">Ville Préféré:</label>
+                <input id="ville" placeholder="Ex: Cartagena">
+                <br>
+            </form>
+            <textarea name="comm" id="" cols="30" rows="10" placeholder="Commentaires"></textarea>
+            <button type="submit">Envoyer</button>
+        </section>
+    </div>
+    <div>
+        <section>
+            <table class="table">
+                <thead>
+                    <tr class="table-dark">
+                        <th scope="col">Ville</th>
+                        <th scope="col">Habitants</th>
+                        <th scope="col">Altitude</th>
+                        <th scope="col">Température</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-primary">
+                        <th scope="row">Barichara</th>
+                        <th>7.215</th>
+                        <th>1.024 mdnm</th>
+                        <th>Chaud</th>
+                    </tr>
+                    <tr class="table-info">
+                        <th scope="row">Villa de Leyva</th>
+                        <th>16.984</th>
+                        <th>2.149 mdnm</th>
+                        <th>Tempéré</th>
+                    </tr>
+                    <tr class="table-primary">
+                        <th scope="row">Pasto</th>
+                        <th>392.930</th>
+                        <th>2.527 mdnm</th>
+                        <th>Froid</th>
+                    </tr>
+                    <tr class="table-info">
+                        <th scope="row">Palomino</th>
+                        <th>1.093.671</th>
+                        <th>2 mdnm</th>
+                        <th>Chaud</th>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <div class="text-center">
+        <footer class="row">
+            <img src="assets/img/icon.png" class="col-sm-1" alt="voyager_icon">
+            <img src="assets/img/instagram.gif" class="col-sm-1" alt="ig">
+            <img src="assets/img/linkedin.gif" class="col-sm-1" alt="linkedin">
+            <img src="assets/img/facebook.gif" class="col-sm-1" alt="fb">
+            <img src="assets/img/whatsapp.gif" class="col-sm-1" alt="wa">
+        </footer>
+    </div>
+    <!-- Javascript local -->
+    <link rel="stylesheet" href="js/bootstrap.js">
+</body>
+</html>

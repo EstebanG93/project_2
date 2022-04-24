@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: white;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.menu{
+    background-image: url("../assets/img/sky_bg.jfif");
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    grid-area: titulo;
+}
+.icon{
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+    background-image: url("../assets/img/sky_bg.jfif");
+    width: 120px;
+    grid-area: icon;
+}
+#titulo{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-family: 'Hurricane', cursive;
+    font-size: 60px;
+}
+nav{
+    background-image: url("../assets/img/sky_bg.jfif");
+    grid-area: list;
+}
+ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+}
+a{
+    display: inline;
+    text-decoration: none;
+    color: black;
+}
+.text, .part{
+    background-color: antiquewhite;
+    border: 3px black solid;
+    border-radius: 15px;
+    text-align: center;
+}
+.text{
+    display: flex;
+    justify-content: left;
+    justify-items: center;
+    text-align: left;
+    grid-area: text;
+}
+.part{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border: 2px grey outset;
+    border-radius: 15px;
+    background-color: beige;
+    font-style: italic;
+    grid-area: title;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: white;
+    grid-area: footer;
+    bottom: 0;
+}
+footer img{
+    width: 60px;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 15% 15% 70%;
+    grid-template-rows: 100px 30px 200px 70px;
+    grid-template-areas:
+    "icon titulo titulo"
+    "icon list list"
+    "title text text"
+    "footer footer footer";
+}

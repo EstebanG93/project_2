@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+/* Áreas: icon, titulo, menu, preview */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: white;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.menu{
+    background-image: url("../assets/img/sky_bg.jfif");
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    grid-area: titulo;
+    /* height: 80px; */
+}
+.icon{
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+    background-image: url("../assets/img/sky_bg.jfif");
+    width: 120px;
+    grid-area: icon;
+}
+#titulo{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-family: 'Hurricane', cursive;
+    font-size: 60px;
+}
+nav{
+    background-image: url("../assets/img/sky_bg.jfif");
+    grid-area: list;
+}
+ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+}
+.preview{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    border: 4px darkblue outset;
+    border-radius: 15px;
+    background-color: azure;
+    grid-area: preview;
+}
+.preview img{
+    display: inline;
+    width: 370px;
+    /* height: 370px; */
+}
+.form{
+    padding: 5px 0px 5px 5px;
+    position: relative;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 2px;
+    width: 245px;
+    background-color: whitesmoke;
+    grid-area: form;
+}
+.text{
+    text-align: left;
+    width: 150px;
+}
+.add{
+    left: 150px;
+    width: 130px;
+}
+section textarea{
+   height: 200px;
+    width: 236px;
+}
+.table{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: whitesmoke;
+    grid-area: villes;
+}
+table{
+    display: inline-block;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: white;
+    grid-area: footer;
+    bottom: 0;
+}
+footer img{
+    width: 60px;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 15% 15% 70%;
+    grid-template-rows: 100px 30px 370px 320px 70px;
+    grid-template-areas:
+    "icon titulo titulo"
+    "icon list list"
+    "preview preview preview"
+    "form form villes"
+    "footer footer footer";
+}
